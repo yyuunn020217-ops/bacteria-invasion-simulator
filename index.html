@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>세균의 침투 일지 시뮬레이션</title>
+    <title>세균의 침투 일지</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>세균의 침투 일지</h1>
-    <div id="simulation-container">
-        <p id="scenario-message">안녕하세요! 시뮬레이션을 시작합니다.</p>
-        <div class="image-display"></div>
-        <div id="options-container">
-            <button onclick="startSimulation()">시작하기</button>
+    <div id="game-container">
+        <h1>세균의 침투 일지</h1>
+        <div id="scenario-display">
+            <div id="image-placeholder"></div>
+            <p id="message-text"></p>
+            <div id="options-container"></div>
+        </div>
+        <div id="status-display">
+            <p>현재 세균 수: <span id="current-bacteria-count">1000</span> 마리</p>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
